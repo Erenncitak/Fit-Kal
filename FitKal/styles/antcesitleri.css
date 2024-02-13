@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, #6e88a1 90.2%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header-con {
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    backdrop-filter: blur(10px);
+    margin-top: 3.7rem;
+    padding: 1.5rem;
+}
+
+.header-con h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #131b41;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px #4b5069;
+}
+
+.card {
+    background: radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%);
+    box-shadow: 0 0 10px #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover:nth-child(odd) {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.card:hover:nth-child(even) {
+    transform: scale(1.08) rotate(2deg);
+}
+
+.card .card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #000;
+}
+
+.container-ant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 1rem;
+}

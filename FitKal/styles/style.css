@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background-color: #353a53;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #353a53;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #353a53;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #a3a3a315;
+    backdrop-filter: blur(5px);
+}
+
+.nav-con-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-navbar {
+    background: linear-gradient(90deg, #5d9eff63 0%, #3f5d7c63 48%, #6bbaff63 100%);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-login-register {
+    background-color: #353a53;
+    color: #fff;
+    border: none;
+    border-radius: 15px 0 15px 0;
+    padding: 6px 12px;
+    transition: all 0.3s ease-in-out;
+    border: 1px dashed transparent;
+}
+
+.btn-login-register:hover {
+    border: 1px dashed rgb(131, 135, 141);
+    border-radius: 0 15px 0 15px;
+}
+
+.btn-login-register:focus {
+    outline: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.main-about-us {
+    height: 100%;
+    background-color: #ffffff21;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+}
+
+.main-about-us h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #353a53;
+    text-shadow: 0 0 3px #0000003d;
+    letter-spacing: 2px;
+}
+
+.main-about-us p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #424242;
+    text-shadow: 0 0 1px #0000008f;
+    letter-spacing: 1px;
+}
+
+.btn-main-about {
+    background-color: #353a53;
+    color: #fff;
+    border: none;
+    border-radius: 15px 0 15px 0;
+    padding: 8px 15px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-main-about:hover {
+    border-radius: 0 15px 0 15px;
+}
+
+.log-reg-mobile {
+    display: none !important;
+}
+
+.container-calc {
+    height: 90vh;
+}
+
+.container-calc h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #353a53;
+    text-shadow: 0 0 3px #0000003d;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.squares {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+
+.square {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff21;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.square:hover {
+    background-color: #ffffff42;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+.square a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #353a53;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px #0000008f;
+    transition: all 0.3s ease;
+}
+
+.square a:hover {
+    color: #262e58;
+    text-shadow: 0 0 1px #0000008f;
+}
+
+.square img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+        text-align: center !important;
+    }
+
+    .log-reg-responsive {
+        display: none !important;
+    }
+
+    .log-reg-mobile {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 1rem;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: max-content;
+        position: relative;
+        left: 40%;
+    }
+}
